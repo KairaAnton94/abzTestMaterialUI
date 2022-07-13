@@ -1,0 +1,60 @@
+@import "src/styles/variables";
+
+.hp-title {
+  .hp-title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    color: var(--white);
+  }
+
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 650px;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../../../assets/images/background.webp') center/cover no-repeat;
+  }
+
+  &__h1 {
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  &__p {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    min-width: 100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $md2) {
+  .hp-title {
+    min-height: 500px;
+    height: unset;
+    max-height: unset;
+  }
+}
+@media (max-width: $md4) {
+  .hp-title {
+    align-items: flex-start;
+    &__h1 {
+      padding-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+
+.tooltip{
+  cursor: pointer;
+  &__content{
+    color:var(--white);
+    background: var(--black);
+    border-radius: 4px;
+    position: fixed;
+    top:0;
+    left:0;
+    transform: translate(-16px,21px);
+    padding: 3px 16px;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+  }
+  &__target{
+    pointer-events: none;
+  }
+}
+@keyframes enter {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes exit {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}

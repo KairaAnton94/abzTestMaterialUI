@@ -1,0 +1,32 @@
+.hp-form{
+  .hp-form__container{
+    margin-top: 140px;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__form{
+    margin: 50px auto;
+    max-width: 380px;
+    width: 100%;
+    &-input:not(:first-child){
+      margin-top: 50px;
+    }
+    &-p{
+      margin-top: 43px;
+      margin-bottom: 11px;
+    }
+    &-radio{
+      margin-bottom: 7px;
+    }
+    &-file{
+      margin-top: 47px;
+    }
+
+  }
+  &__button{
+    min-width: 100px;
+    margin: 0 auto;
+  }
+
+}

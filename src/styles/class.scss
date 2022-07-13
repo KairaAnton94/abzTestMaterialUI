@@ -1,0 +1,21 @@
+@import "variables";
+
+._container {
+  max-width: var(--maxWidthContainer);
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 904px;
+  }
+  @media (max-width: $md2) {
+    max-width: 704px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 16px;
+  }
+}
+
+.body_hidden {
+  overflow: hidden;
+  max-height: 100vh;
+}

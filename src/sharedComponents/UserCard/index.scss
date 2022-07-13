@@ -1,0 +1,36 @@
+.user-card{
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &>*:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+  &__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    white-space: nowrap;
+  }
+  &__description{
+    &-position,
+    &-email,
+    &-number{
+      white-space: nowrap;
+    }
+  }
+}

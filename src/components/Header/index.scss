@@ -1,0 +1,26 @@
+.header{
+  .header__container{
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    width: 104px;
+    height: 26px;
+    img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__buttons{
+    display: flex;
+    &>*:first-child{
+      margin:0 10px;
+    }
+    &>*{
+      min-width: 100px;
+    }
+  }
+}
